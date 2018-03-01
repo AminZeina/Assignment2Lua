@@ -30,9 +30,10 @@ local function onAreaClicked( event )
 	local radius = radiusTextField.text
 	area = 3.14*(radius*radius)
 	
-	local showArea = display.newText( "The Area is: " .. area, 475, 900, native.systemFont, 108)
+	local showArea = display.newText( "The Area is: " .. area, 525, 900, native.systemFont, 108)
 	showArea:setFillColor( 0, 0, 0 )
 	
+
 	return true
 end
 
@@ -47,6 +48,8 @@ local function onCircumferenceClicked( event )
 
 	return true
 end
+
+
 
 enterArea:addEventListener( "touch", onAreaClicked)
 
